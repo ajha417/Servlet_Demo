@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  
+  <servlet>
+  	<servlet-name>abc</servlet-name>
+  	<servlet-class>com.amit.program.AddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>abc</servlet-name>
+  	<url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>square</servlet-name>
+  	<servlet-class>com.amit.program.SquareServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>square</servlet-name>
+  	<url-pattern>/square</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MyServlet</servlet-name>
+  	<servlet-class>com.amit.program.MyServletContext_Config</servlet-class>
+  	<init-param>
+  		<param-name>name</param-name>
+  		<param-value>Sneha Jha</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MyServlet</servlet-name>
+  	<url-pattern>/servletConfig</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  	<param-name>name</param-name>
+  	<param-value>Amit Kumar Jha</param-value>
+  </context-param>
+  
+  <servlet>
+  	<servlet-name>s1</servlet-name>
+  	<servlet-class>com.amit.program.ControllerServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>s1</servlet-name>
+  	<url-pattern>/ControllerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>addIt</servlet-name>
+  	<servlet-class>com.amit.program.AddPersonServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>addIt</servlet-name>
+  	<url-pattern>/addPerson</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>
